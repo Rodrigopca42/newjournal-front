@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { NovaNoticiaComponent } from './components/pages/nova-noticia/nova-noticia.component';
+import { NoticiaFormComponent } from './components/noticia-form/noticia-form.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NovaNoticiaComponent } from './components/pages/nova-noticia/nova-notic
     FooterComponent,
     AboutComponent,
     HomeComponent,
-    NovaNoticiaComponent
+    NovaNoticiaComponent,
+    NoticiaFormComponent
   ],
   imports: [
     BrowserModule,
