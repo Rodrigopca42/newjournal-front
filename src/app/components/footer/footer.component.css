@@ -1,0 +1,20 @@
+.container{
+  background: linear-gradient(167deg, rgba(86,241,45,1) 0%,
+   rgba(84,84,84,1) 74%);
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  color: aliceblue;
+  margin: 0 auto;
+}
+
+img{
+  height: 2rem;
+}
+
+span{
+  color: greenyellow;
+}
