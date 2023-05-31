@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, } from '@angular/core';
 
 @Component({
   selector: 'app-noticia-form',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./noticia-form.component.css']
 })
 export class NoticiaFormComponent {
+@Input() btnText!:string;
 
 }

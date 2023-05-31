@@ -7,3 +7,8 @@ h2{
 h2 span{
   color: darkgreen;
 }
+
+h4{
+  text-align: center;
+  margin: 1rem;
+}

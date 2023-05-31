@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./nova-noticia.component.css']
 })
 export class NovaNoticiaComponent {
+btnText = 'Cadastrar'
+
 
 }
