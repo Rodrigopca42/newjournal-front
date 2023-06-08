@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validator, Validators } from '@angular/forms';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Noticia } from 'src/app/Noticia';
 
 @Component({
   selector: 'app-noticia-form',
@@ -7,18 +8,18 @@ import { FormControl, FormGroup, Validator, Validators } from '@angular/forms';
   styleUrls: ['./noticia-form.component.css']
 })
 export class NoticiaFormComponent {
+@Output() onSubmit = new EventEmitter<Noticia>
 @Input() btnText!:string;
 
 noticiaForm!: FormGroup;
 
 constructor() {}
 
-ngOnInit(): void{
+ngOnInit(): void {
   this.noticiaForm = new FormGroup({
     id: new FormControl(''),
     titulo: new FormControl('',[Validators.required]),
     description: new FormControl('',[Validators.required]),
-    image: new FormControl(''),
   })
 }
 
@@ -34,7 +35,9 @@ submit(){
   if(this.noticiaForm.invalid){
     return;
   }
-  console.log("Enviou o formulário")
+  console.log(this.noticiaForm.value);
+
+  this.onSubmit.emit(this.noticiaForm.value);
 }
 
 }

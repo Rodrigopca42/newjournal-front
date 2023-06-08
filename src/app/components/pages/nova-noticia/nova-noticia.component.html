@@ -1,4 +1,7 @@
 <h2>Compartilhe a <span>Notícia</span></h2>
 <h4>A notícia deve ser cadastrada de acordo com sua categoria.</h4>
-<app-noticia-form [btnText]="btnText"></app-noticia-form>
+<app-noticia-form
+[btnText]="btnText"
+(onSubmit)="createHandler($event)"
+></app-noticia-form>
 

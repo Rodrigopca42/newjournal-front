@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { Noticia } from 'src/app/Noticia';
+
+import { NoticiaService } from 'src/app/services/noticia.service';
 
 @Component({
   selector: 'app-nova-noticia',
@@ -7,6 +11,29 @@ import { Component } from '@angular/core';
 })
 export class NovaNoticiaComponent {
 btnText = 'Cadastrar'
+
+constructor(private noticiaService: NoticiaService){}
+
+ngOnInit(): void {}
+
+async createHandler(noticia: Noticia){
+
+  const formData = new FormData()
+
+  formData.append("titulo", noticia.titulo);
+  formData.append("description", noticia.noticia);
+
+  //todo
+
+  this.noticiaService.createNoticia(formData).subscribe();
+
+  //exibir msg
+
+  //redirect
+
+
+
+}
 
 
 }
