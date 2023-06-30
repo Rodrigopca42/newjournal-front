@@ -14,6 +14,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { NovaNoticiaComponent } from './components/pages/nova-noticia/nova-noticia.component';
 import { NoticiaFormComponent } from './components/noticia-form/noticia-form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AboutComponent,
     HomeComponent,
     NovaNoticiaComponent,
-    NoticiaFormComponent
+    NoticiaFormComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

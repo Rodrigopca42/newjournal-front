@@ -12,7 +12,7 @@ import { environment } from 'src/environments/environment';
 export class NoticiaService {
 
   private baseUrl = environment.baseUrl
-  private apiRUrl = `${this.baseUrl}/novasnoticias`
+  private apiRUrl = `${this.baseUrl}api/novasnoticias`
 
   constructor(private http: HttpClient) { }
 

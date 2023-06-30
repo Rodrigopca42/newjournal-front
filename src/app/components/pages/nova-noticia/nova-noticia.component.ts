@@ -25,7 +25,7 @@ async createHandler(noticia: Noticia){
 
   //todo
 
-  this.noticiaService.createNoticia(formData).subscribe();
+  await this.noticiaService.createNoticia(formData).subscribe();
 
   //exibir msg
 
