@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +17,7 @@ import { NovaNoticiaComponent } from './components/pages/nova-noticia/nova-notic
 import { NoticiaFormComponent } from './components/noticia-form/noticia-form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './components/login/login.component';
+import { NavComponent } from './components/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,8 @@ import { LoginComponent } from './components/login/login.component';
     HomeComponent,
     NovaNoticiaComponent,
     NoticiaFormComponent,
-    LoginComponent
+    LoginComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +39,8 @@ import { LoginComponent } from './components/login/login.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    MatFormFieldModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

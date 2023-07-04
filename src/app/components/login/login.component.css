@@ -1,0 +1,17 @@
+.login-container{
+  height: 100%;
+  background: linear-gradient(167deg, rgba(86,241,45,1) 0%,
+   rgba(84,84,84,1) 74%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15% 0;
+}
+
+.form{
+  width: 30rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: cyan;
+}
