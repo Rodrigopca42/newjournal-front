@@ -25,7 +25,7 @@
         placeholder="ex:123"/>
       </div>
 
-      <button [disabled]="!validaCampos()" mat-raised-button color="primary">ENTRAR</button>
+      <button  (click)="logar()" [disabled]="!validaCampos()" mat-raised-button color="primary">ENTRAR</button>
 
     </form>
 

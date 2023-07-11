@@ -19,6 +19,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './components/login/login.component';
 import { NavComponent } from './components/nav/nav.component';
 
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +44,9 @@ import { NavComponent } from './components/nav/nav.component';
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatButtonModule
+    MatButtonModule,
+   
+
   ],
   providers: [],
   bootstrap: [AppComponent]
